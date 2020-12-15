@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Author: Airat Halitov
+# GitHub: https://github.com/AiratHalitov/airat-wp-cli-install
+# License: GPLv3
+
 rm -rf wp-cli.phar
 rm -rf wp-completion.bash
 
