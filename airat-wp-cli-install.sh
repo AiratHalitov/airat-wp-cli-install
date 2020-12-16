@@ -16,7 +16,10 @@ wp --info
 wget https://raw.githubusercontent.com/wp-cli/wp-cli/v2.4.0/utils/wp-completion.bash
 sudo mv wp-completion.bash /usr/local/bin/wp-completion.bash
 
-echo "source /usr/local/bin/wp-completion.bash" >> ~/.bashrc
+if [ ! -f bashrc-updated.txt ]; then
+    echo "source /usr/local/bin/wp-completion.bash" >> ~/.bashrc
+    date > bashrc-updated.txt
+fi
 source ~/.bashrc
 
 # update:
