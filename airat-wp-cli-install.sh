@@ -7,11 +7,11 @@
 rm -rf wp-cli.phar
 rm -rf wp-completion.bash
 
-wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar &> /dev/null
+wget -q https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 chmod +x wp-cli.phar
 sudo mv wp-cli.phar /usr/local/bin/wp
 
-wget https://raw.githubusercontent.com/wp-cli/wp-cli/v2.4.0/utils/wp-completion.bash &> /dev/null
+wget -q https://raw.githubusercontent.com/wp-cli/wp-cli/v2.4.0/utils/wp-completion.bash
 sudo mv wp-completion.bash /usr/local/bin/wp-completion.bash
 
 if [ ! -f bashrc-updated.txt ]; then
